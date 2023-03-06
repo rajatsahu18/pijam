@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title color="light">Courses</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<h2>{{title}}</h2>
+
+<ion-content class="content">
+  <div *ngFor="let course of courses">
+      <h4>{{course.title}}</h4>
+      <video width="360" height="240" controls>
+        <source src="../../../assets//video.mp4" type="video/mp4" >
+      </video>
+  </div>
+</ion-content>
+
