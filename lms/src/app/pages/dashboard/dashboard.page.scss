@@ -1,4 +1,47 @@
-.content {
+.new-background-color {
+    --background: #5DCFD0;
+}
+
+.topbar {
+    border: 1px solid #62CCA4;
+    background-color: #62CCA4;
+    border-radius: 1rem;
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
+    margin: 2rem 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.first {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    margin: 2rem 4rem;
+    cursor: pointer;
+}
+
+.first div {
+    width: auto;
+    padding: 0.2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.topbar > div:nth-child(1) > ion-icon{
+    font-size: 64px;
+}
+
+@media screen and (max-width: 600px) {
+    .topbar {
+        margin: 1rem 1rem;
+        justify-content: space-around;
+    }
+    .first {
+        margin: 1rem;
+    }
 }

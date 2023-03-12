@@ -1,11 +1,5 @@
-h2 {
-    text-align: center;
-    background-color:palevioletred;
-    width: fit-content;
-    margin: 1rem auto;
-    padding: 1rem;
-    color: #fff;
-    border-radius: 1rem;
+.new-background-color {
+    --background: #5DCFD0;
 }
 
 .content {
@@ -14,29 +8,16 @@ h2 {
 }
 
 .content div {
-    border:1px solid cornflowerblue;
+    border-radius: 17px;
+    background: #ffffff;
+    box-shadow:  -24px 24px 48px #dedede,
+             24px -24px 48px #dedede;
     display: flex;
     flex-direction: column;
     margin: 2rem;
     transition: 0.2s;
     text-align: center;
-    background-color: cornflowerblue;
-    border-radius: 1rem;
     padding: 1rem;
-    color: #fff;
-}
-
-.content div:nth-child(odd) {
-    border:1px solid grey;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    transition: 0.2s;
-    text-align: center;
-    background-color: grey;
-    border-radius: 1rem;
-    padding: 1rem;
-    color: #fff;
 }
 
 .content div h4 {
@@ -46,7 +27,6 @@ h2 {
 
 .content div a {
     text-decoration: none;
-    color: #fff;
     font-weight: 900;
 }
 
@@ -54,4 +34,18 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 390px) {
+    .content div video {
+        width: 16rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content div video {
+        width: 40rem;
+        height: 10rem;
+    }
 }

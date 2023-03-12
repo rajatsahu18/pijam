@@ -1,17 +1,19 @@
 <ion-header>
-  <ion-toolbar color="danger">
-    <ion-title color="light">Courses</ion-title>
+  <ion-toolbar class="new-background-color">
+    <ion-button fill="clear" color="light" [routerLink]="['','dashboard']" routerDirection="back">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title style="text-align: center;" color="light">CS Fundamentals</ion-title>
   </ion-toolbar>
 </ion-header>
-
-<h2>{{title}}</h2>
 
 <ion-content class="content">
   <div *ngFor="let course of courses">
       <h4>{{course.title}}</h4>
-      <video width="360" height="240" controls>
-        <source src="../../../assets//video.mp4" type="video/mp4" >
+      <video *ngIf="course.type == 'LmsItemType.VIDEO' " width="300" height="240" controls>
+        <source src="../../../assets/video.mp4" type="video/mp4">
       </video>
+      <!-- <iframe *ngIf="course.type == 'LmsItemType.VIDEO'" src={{course.url}}></iframe> -->
+      <a *ngIf="course.type == 'LmsItemType.DOCUMENT' " href={{course.url}} target="_blank">{{course.title}}</a>
   </div>
 </ion-content>
-

@@ -6,11 +6,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Dashboard', url: '/dashboard', icon: 'home'  },
-    { title: 'Total points earned', url: '/points', icon: 'trophy' },
-    { title: 'Total badges earned', url: '/badges', icon: 'ribbon' },
-    { title: 'CS courses for Teachers', url: '/courses', icon: 'desktop' },
+    { title: 'Dashboard', url: '/dashboard', icon: 'home', background: 'warning', color:'light'},
+    { title: 'Points earned', url: '/points', icon: 'trophy', background: 'danger', color:'light'},
+    { title: 'Badges earned', url: '/badges', icon: 'ribbon', background: 'secondary', color:'light' },
+    { title: 'CS courses for Teachers', url: '/courses', icon: 'desktop', background: 'primary', color:'light' },
   ];
-  public labels = ['Open Lab', 'Hour of Code'];
+  public labels = [
+    { title: 'Open Labs', icon: 'flask'},
+    { title: 'Hour of code', icon: 'hourglass'},
+  ]
   constructor() {}
 }

@@ -1,6 +1,9 @@
 <ion-header>
-  <ion-toolbar color="success">
-    <ion-title color="light">Total Points earned</ion-title>
+  <ion-toolbar class="new-background-color">
+    <ion-button fill="clear" color="light" [routerLink]="['','dashboard']" routerDirection="back">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title style="text-align: center;" color="light">Points</ion-title>
   </ion-toolbar>
 </ion-header>
 <img src="../../../assets/points.png" alt="points">
