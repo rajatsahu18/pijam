@@ -13,7 +13,6 @@
       <video *ngIf="course.type == 'LmsItemType.VIDEO' " width="300" height="240" controls>
         <source src="../../../assets/video.mp4" type="video/mp4">
       </video>
-      <!-- <iframe *ngIf="course.type == 'LmsItemType.VIDEO'" src={{course.url}}></iframe> -->
       <a *ngIf="course.type == 'LmsItemType.DOCUMENT' " href={{course.url}} target="_blank">{{course.title}}</a>
   </div>
 </ion-content>

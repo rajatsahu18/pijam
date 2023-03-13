@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'lms.example.app',
-  appName: 'lms',
+  appId: 'com.example.app',
+  appName: 'pijamlms',
   webDir: 'www',
   bundledWebRuntime: false
 };
